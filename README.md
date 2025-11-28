@@ -9,9 +9,9 @@ The system is designed following **clean separation of services**, leveraging **
 ## 🧩 Services Overview
 | Service | Status          | Description |
 |---------|-----------------|-------------|
-| `account-service` | 🟢 Implementing | Manage banking account information |
-| `card-service` | 🔜 In Progress  | Credit/Debit card management |
-| `loan-service` | 🔜 Planned      | Loan application & processing |
+| `accounts` | 🟢 Implementing | Manage banking account information |
+| `cards` | 🔜 In Progress  | Credit/Debit card management |
+| `loans` | 🔜 Planned      | Loan application & processing |
 
 ## 🧱 Technology Stack
 | Category | Tools                            |
@@ -31,12 +31,12 @@ cd banking-microservices-platform
 ```
 ### 2️⃣ Run account-service locally
 ```bash
-cd account-service
+cd accounts 
 mvn clean install
 mvn spring-boot:run
 ```
 ### 📁 Project Structure
 banking-microservices-platform/  
-├── account-service/      
-├── card-service/         
-├── loan-service/ 
+├── accounts/      
+├── cards/         
+├── loans/ 
