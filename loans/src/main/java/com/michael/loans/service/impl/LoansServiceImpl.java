@@ -4,6 +4,8 @@ import com.michael.loans.constants.LoansConstants;
 import com.michael.loans.dto.LoansDto;
 import com.michael.loans.entity.Loans;
 import com.michael.loans.exception.LoanAlreadyExistsException;
+import com.michael.loans.exception.ResourceNotFoundException;
+import com.michael.loans.mapper.LoansMapper;
 import com.michael.loans.repository.LoansRepository;
 import com.michael.loans.service.ILoansService;
 import lombok.AllArgsConstructor;
@@ -49,7 +51,10 @@ public class LoansServiceImpl implements ILoansService {
      */
     @Override
     public LoansDto fetchLoan(String mobileNumber) {
-        return null;
+        Loans loans = loansRepository.findByMobileNumber(mobileNumber).orElseThrow(
+                () -> new ResourceNotFoundException("Loan", "mobileNumber", mobileNumber)
+        );
+        return LoansMapper.mapToLoansDto(loans, new LoansDto());
     }
 
     /**
@@ -59,7 +64,11 @@ public class LoansServiceImpl implements ILoansService {
      */
     @Override
     public boolean updateLoan(LoansDto loansDto) {
-        return false;
+        Loans loans = loansRepository.findByLoanNumber(loansDto.getLoanNumber()).orElseThrow(
+                () -> new ResourceNotFoundException("Loan","loanNumber", loansDto.getLoanNumber())
+        );
+        loansRepository.save(loans);
+        return true;
     }
 
     /**
