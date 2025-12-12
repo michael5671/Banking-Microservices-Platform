@@ -1,6 +1,6 @@
 package com.michael.loans.constants;
 
-public class LoansConstants {
+public final class LoansConstants {
     private LoansConstants(){
 
     }
