@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec59c72f-5b83-4b70-afce-4c3665ce9016" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/michael/accounts/dto/AccountsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/michael/accounts/dto/AccountsContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/michael/cards/dto/CardsContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/michael/cards/dto/CardsContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/michael/loans/dto/LoansContactInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/michael/loans/dto/LoansContactInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,10 +52,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.AccountsApplication.executor": "Run",
-    "Spring Boot.CardsApplication.executor": "Run",
+    "Spring Boot.AccountsApplication.executor": "Debug",
+    "Spring Boot.CardsApplication.executor": "Debug",
     "Spring Boot.ConfigserverApplication.executor": "Debug",
-    "Spring Boot.LoansApplication.executor": "Run",
+    "Spring Boot.EurekaserverApplication.executor": "Debug",
+    "Spring Boot.LoansApplication.executor": "Debug",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
@@ -70,6 +73,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/loans/src/main/resources" />
@@ -95,7 +101,7 @@
             <map>
               <entry key="AccountsApplication" value="STOPPED" />
               <entry key="CardsApplication" value="STOPPED" />
-              <entry key="ConfigserverApplication" value="FAILED" />
+              <entry key="ConfigserverApplication" value="STOPPED" />
               <entry key="LoansApplication" value="STOPPED" />
             </map>
           </value>
@@ -103,7 +109,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigserverApplication">
+  <component name="RunManager" selected="Spring Boot.AccountsApplication">
     <configuration name="AccountsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="SPRING_PROFILES_ACTIVE" value="prod" />
@@ -178,7 +184,8 @@
       <workItem from="1768113659975" duration="1693000" />
       <workItem from="1768115646282" duration="873000" />
       <workItem from="1768116741680" duration="3627000" />
-      <workItem from="1768120429838" duration="7450000" />
+      <workItem from="1768120429838" duration="10384000" />
+      <workItem from="1768140617769" duration="765000" />
     </task>
     <servers />
   </component>
